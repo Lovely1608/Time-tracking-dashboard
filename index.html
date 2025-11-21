@@ -3,89 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Frontend Meontor|Time-tracking-dashborad</title>
   </head>
+  <link rel="stylesheet" href="style.css" />
+
   <body>
     <main>
       <div class="main-container">
         <div class="head-container">
           <div class="profile-box">
-            <img src="images/image-jeremy.png" alt="profile-pic" />
-            <p>Report for</p>
-            <h1>Jeremy Robson</h1>
+            <div class="image-container">
+              <img src="images/image-jeremy.png" alt="profile-pic" />
+            </div>
+            <div>
+              <p>Report for</p>
+              <h1>Jeremy Robson</h1>
+            </div>
           </div>
-          <span class="day-btn">Daily</span>
-          <span class="week-btn">Weekly</span>
-          <span class="month-btn">Monthly</span>
+          <div class="buttons">
+            <span class="day-btn">Daily</span>
+            <span class="week-btn">Weekly</span>
+            <span class="month-btn">Monthly</span>
+          </div>
         </div>
         <div class="body-container">
-          <div class="box">
+          <div class="box1">
+            <div class="body-image">
+              <img src="images/icon-work.svg" alt="">
+            </div>
             <div class="content-box">
               <div class="left-side">
-                <span class="wrok">Work</span> <time class="hrs">hrs</time>
+                <h1>Work</h1>
+                <h1 class="current">32hrs</h1>
                 <div class="right-side">
-                  <p>...</p>
-                  <p>Last - hrs</p>
+                  <h1>...</h1>
+                  <p class="previous">Last Week - 36hrs</h1>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box2">
+             <div class="body-image">
+              <img src="images/icon-play.svg" alt="">
+            </div>
             <div class="content-box">
               <div class="left-side">
-                <span class="wrok">Work</span> <time class="hrs">hrs</time>
+                <h1>play</h1>
+                <h1 class="current">10hrs</h1>
                 <div class="right-side">
-                  <p>...</p>
-                  <p>Last - hrs</p>
+                  <h1>...</h1>
+                  <p class="previous">Last Week - 8hrs</h1>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box3">
+             <div class="body-image">
+              <img src="images/icon-study.svg" alt="">
+            </div>
             <div class="content-box">
               <div class="left-side">
-                <span class="wrok">Work</span> <time class="hrs">hrs</time>
+                <h1>Study</h1>
+                <h1 class="current">4hrs</h1>
                 <div class="right-side">
-                  <p>...</p>
-                  <p>Last - hrs</p>
+                  <h1>...</h1>
+                  <p class="previous">Last Week - 7hrs</h1>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box4">
+             <div class="body-image">
+              <img src="images/icon-exercise.svg" alt="">
+            </div>
             <div class="content-box">
               <div class="left-side">
-                <span class="wrok">Work</span> <time class="hrs">hrs</time>
+                <h1>Exercise</h1>
+                <h1 class="current">4hrs</h1>
                 <div class="right-side">
-                  <p>...</p>
-                  <p>Last - hrs</p>
+                  <h1>...</h1>
+                  <p class="previous">Last Week - 5hrs</h1>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box5">
+             <div class="body-image">
+              <img src="images/icon-social.svgi" alt="">
+            </div>
             <div class="content-box">
               <div class="left-side">
-                <span class="wrok">Work</span> <time class="hrs">hrs</time>
+                <h1>Social</h1>
+                <h1 class="current">5hrs</h1>
                 <div class="right-side">
-                  <p>...</p>
-                  <p>Last - hrs</p>
+                  <h1>...</h1>
+                  <p class="previous">Last Week - 10hrs</h1>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box6">
+             <div class="body-image">
+              <img src="images/icon-self-care.svg" alt="">
+            </div>
             <div class="content-box">
               <div class="left-side">
-                <span class="wrok">Work</span> <time class="hrs">hrs</time>
+                <h1>Self Care</h1>
+                <h1 class="current">2hrs</h1>
                 <div class="right-side">
-                  <p>...</p>
-                  <p>Last - hrs</p>
+                  <h1>...</h1>
+                  <p class="previous">Last Week - 2hrs</h1>
                 </div>
               </div>
             </div>
@@ -93,5 +125,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>

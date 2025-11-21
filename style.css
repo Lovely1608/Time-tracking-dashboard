@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*(card titles e.g. Work, Play)*/
+:root {
+  --fontSize: 18px;
+}
+
+/*colors*/
+:root {
+  --Purple600: hsl(246, 80%, 60%); /*600*/
+  --Orange300: hsl(15, 100%, 70%); /*300 (work)*/
+  --Blue300: hsl(195, 74%, 62%); /* 300 (play)*/
+  --Pink400: hsl(348, 100%, 68%); /* 400 (study)*/
+  --Green400: hsl(145, 58%, 55%); /* 400 (exercise)*/
+  --Purple700: hsl(264, 64%, 52%); /*700 (social)*/
+  --Yellow300: hsl(43, 84%, 65%); /* 300 (self care)*/
+
+  --Navy950: hsl(226, 43%, 10%); /*950*/
+  --Navy900: hsl(235, 46%, 20%); /*900*/
+  --Purple500: hsl(235, 45%, 61%); /*500*/
+  --Navy200: hsl(236, 100%, 87%); /*200*/
+}
+
+body {
+  /* background-color: var(--NavyWeight); */
+  width: 100vw;
+  height: auto;
+  font-family: Rubik;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: var(--Navy200);
+}
+
+.main-container {
+  width: 100vw;
+}
+
+.head-container {
+  height: 15rem;
+  background-color: var(--Navy900);
+  border-radius: 1rem;
+}
+
+.profile-box {
+  height: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--Purple600);
+  border-radius: 1rem;
+}
+
+.profile-box h1 {
+  color: #ccc;
+  font-weight: 100;
+}
+
+.profile-box p {
+  font-size: var(--fontSize);
+}
+
+.image-container {
+  width: 5em;
+  height: 5em;
+  background-color: var(--Navy200);
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 4.5em;
+}
+
+.buttons {
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons > span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/*body container design*/
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  width: 100vw;
+  height: 12rem;
+  margin-top: 2rem;
+  background-color: var(--Orange300);
+  border-radius: 1rem;
+}
+
+.box2 {
+  background-color: var(--Blue300);
+}
+
+.box3 {
+  background-color: var(--Pink400);
+}
+
+.box4 {
+  background-color: var(--Green400);
+}
+
+.box5 {
+  background-color: var(--Purple700);
+}
+
+.box6 {
+  background-color: var(--Yellow300);
+}
+
+.content-box {
+  width: 100vw;
+  height: 10rem;
+  background-color: var(--Navy900);
+  border-radius: 1rem;
+}
+
+.content-box h1 {
+  font-weight: 100;
+}
+
+.body-image {
+  display: flex;
+  justify-content: end;
+}
