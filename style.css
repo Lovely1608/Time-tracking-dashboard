@@ -36,6 +36,7 @@ body {
   align-items: center;
   padding: 1rem;
   color: var(--Navy200);
+  background-color: var(--Navy950);
 }
 
 .main-container {
@@ -102,29 +103,34 @@ body {
 .box6 {
   width: 100vw;
   height: 12rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: var(--Orange300);
   border-radius: 1rem;
 }
 
 .box2 {
   background-color: var(--Blue300);
+  margin-top: 4rem;
 }
 
 .box3 {
   background-color: var(--Pink400);
+  margin-top: 4rem;
 }
 
-.box4 {
-  background-color: var(--Green400);
+.box4 { 
+  backgroUnd-color: var(--Green400);
+  margin-top: 4rem;
 }
 
 .box5 {
   background-color: var(--Purple700);
+  margin-top: 2.5rem;
 }
 
 .box6 {
   background-color: var(--Yellow300);
+  margin-top: 5.5rem;
 }
 
 .content-box {
@@ -132,13 +138,23 @@ body {
   height: 10rem;
   background-color: var(--Navy900);
   border-radius: 1rem;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .content-box h1 {
   font-weight: 100;
+  color: white;
 }
 
 .body-image {
   display: flex;
   justify-content: end;
+}
+
+.content-box h2{
+  font-weight: 400;
+  color: white;
 }
