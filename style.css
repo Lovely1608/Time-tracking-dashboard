@@ -138,10 +138,14 @@ body {
   height: 10rem;
   background-color: var(--Navy900);
   border-radius: 1rem;
-  
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.content-box:hover{
+  background-color: var(--Purple500);
+  cursor: pointer;
 }
 
 .content-box h1 {
