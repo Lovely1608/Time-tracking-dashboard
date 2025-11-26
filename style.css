@@ -27,7 +27,7 @@
 }
 
 @media screen and (min-width: 30rem) {
-  /* ---------- Body & Main Centering ---------- */
+  /* Body & Main Centering */
 body {
   min-height: 100vh;          /* full viewport height */
   display: flex;              
@@ -43,14 +43,14 @@ main {
   width: max-content;          /* shrink to fit content */
 }
 
-/* ---------- Main Container ---------- */
+/* Main Container */
 .main-container {
   display: grid;
   grid-template-columns: 15rem auto; /* head + body */
   gap: 2rem;                         /* space between columns */
 }
 
-/* ---------- Head Container ---------- */
+/* Head Container */
 .head-container {
   width: 14rem;
   height: auto;
@@ -111,14 +111,14 @@ main {
   padding-top: 1rem;
 }
 
-/* ---------- Body Container ---------- */
+/* Body Container */
 .body-container {
   display: grid;
   grid-template-columns: repeat(3, 11rem);
   gap: 1rem 5rem; /* row-gap + column-gap */
 }
 
-/* ---------- Boxes ---------- */
+/* Boxes */
 .box1, .box2, .box3, .box4, .box5, .box6 {
   width: 15rem;
   height: 12rem;
@@ -132,7 +132,7 @@ main {
 .box5 { background-color: var(--Purple700); }
 .box6 { background-color: var(--Yellow300); }
 
-/* ---------- Content Boxes ---------- */
+/* Content Boxes */
 .content-box {
   width: 15rem;
   height: 10rem;
