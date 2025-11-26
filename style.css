@@ -26,170 +26,141 @@
   --Navy200: hsl(236, 100%, 87%); /*200*/
 }
 
-/* Dashboard design */
 @media screen and (min-width: 30rem) {
-  body {
-    /* background-color: var(--NavyWeight); */
-    width: 100%;
-    height: auto;
-    font-family: Rubik;
-    padding: 1rem;
-    color: var(--Navy200);
-    background-color: var(--Navy950);
-  }
+  /* ---------- Body & Main Centering ---------- */
+body {
+  min-height: 100vh;          /* full viewport height */
+  display: flex;              
+  justify-content: center;     /* horizontal center */
+  align-items: flex-start;     /* vertical alignment at top */
+  padding: 2rem;
+  background-color: var(--Navy950);
+  font-family: Rubik;
+  color: var(--Navy200);
+}
 
-  /* start head container's coding  */
-  .head-container {
-    width: 14rem;
-    height: 26rem;
-    background-color: var(--Navy900);
-    border-radius: 1rem;
-  }
+main {
+  width: max-content;          /* shrink to fit content */
+}
 
-  .profile-box {
-    height: 13rem;
-    background-color: var(--Purple600);
-    border-radius: 1rem;
-    margin-top: 2rem;
-    padding-bottom: 3rem;
-    padding-top: 1rem;
-  }
+/* ---------- Main Container ---------- */
+.main-container {
+  display: grid;
+  grid-template-columns: 15rem auto; /* head + body */
+  gap: 2rem;                         /* space between columns */
+}
 
-  .profile-box h1 {
-    color: #ccc;
-    font-weight: 100;
-    padding-left: 2rem;
-  }
+/* ---------- Head Container ---------- */
+.head-container {
+  width: 14rem;
+  height: auto;
+  background-color: var(--Navy900);
+  border-radius: 1rem;
+  padding: 1rem;
+}
 
-  .profile-box p {
-    font-size: var(--fontSize);
-    padding-left: 2rem;
-    padding-top: 2rem;
-  }
+.profile-box {
+  height: 13rem;
+  background-color: var(--Purple600);
+  border-radius: 1rem;
+  padding: 1rem 0 3rem;
+}
 
-  .image-container {
-    width: 5em;
-    height: 5em;
-    background-color: var(--Navy200);
-    border-radius: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
-  }
+.profile-box h1 {
+  color: #ccc;
+  font-weight: 100;
+  padding-left: 2rem;
+}
 
-  .image-container img {
-    width: 4.5em;
-  }
+.profile-box p {
+  font-size: var(--fontSize);
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
 
-  .buttons {
-    padding-left: 2rem;
-    padding-top: 1rem;
-  }
+.image-container {
+  width: 5em;
+  height: 5em;
+  background-color: var(--Navy200);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
 
-  .buttons > span:hover {
-    color: white;
-    cursor: pointer;
-  }
+.image-container img {
+  width: 4.5em;
+  border-radius: 50%;
+}
 
-  .day-btn,
-  .week-btn,
-  .month-btn {
-    padding-top: 1rem;
-    display: block;
-  }
+.buttons {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
 
-  /* end*/
+.buttons > span:hover {
+  color: white;
+  cursor: pointer;
+}
 
-  /* start the coding of the content container */
+.day-btn,
+.week-btn,
+.month-btn {
+  display: block;
+  padding-top: 1rem;
+}
 
-  .body-container {
-   display: grid;
-   grid-template-columns: repeat(3, 11rem);
-    row-gap: 2rem;
-    column-gap: 5rem;
-  }
+/* ---------- Body Container ---------- */
+.body-container {
+  display: grid;
+  grid-template-columns: repeat(3, 11rem);
+  gap: 1rem 5rem; /* row-gap + column-gap */
+}
 
-  .box1,
-  .box2,
-  .box3,
-  .box4,
-  .box5,
-  .box6 {
-    width: 15rem;
-    height: 12rem;
-    background-color: var(--Orange300);
-    border-radius: 1rem;
-    
-  }
+/* ---------- Boxes ---------- */
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  width: 15rem;
+  height: 12rem;
+  border-radius: 1rem;
+}
 
-  .box2 {
-    background-color: var(--Blue300);
-  }
+.box1 { background-color: var(--Orange300); }
+.box2 { background-color: var(--Blue300); }
+.box3 { background-color: var(--Pink400); }
+.box4 { background-color: var(--Green400); }
+.box5 { background-color: var(--Purple700); }
+.box6 { background-color: var(--Yellow300); }
 
-  .box3 {
-    background-color: var(--Pink400);
-  }
-
-  .box4 {
-    background-color: var(--Green400);
-  }
-
-  .box4 > .content-box{
-    margin-top: -0.5rem;
-  }
-
-  .box5 {
-    background-color: var(--Purple700); 
-  }
-
-  .box5 > .content-box{
-    margin-top: -3rem;
-  }
-
-.content-box{
+/* ---------- Content Boxes ---------- */
+.content-box {
+  width: 15rem;
+  height: 10rem;
+  background-color: var(--Navy900);
+  border-radius: 1rem;
   margin-top: -2rem;
   position: relative;
 }
 
-  .box6 {
-    background-color: var(--Yellow300);
-  }
+.box4 > .content-box { margin-top: -0.5rem; }
+.box5 > .content-box { margin-top: -3rem; }
+.box6 > .content-box { margin-top: -1rem; }
 
-  .box6 > .content-box{
-    margin-top: -1rem;
-  }
-
-  .content-box {
-    width: 15rem;
-    height: 10rem;
-    background-color: var(--Navy900);
-    border-radius: 1rem;
-  }
-
-  .content-box:hover {
-    background-color: var(--Purple500);
-    cursor: pointer;
-  }
-
-  .content-box h1 {
-    font-weight: 100;
-    color: white;
-  }
-
-  .body-image {
-    display: flex;
-    justify-content: end;
-  }
-
-  .content-box h2 {
-    font-weight: 400;
-    color: white;
-  }
-
-  /* end */
+.content-box:hover {
+  background-color: var(--Purple500);
+  cursor: pointer;
 }
 
+.content-box h1, .content-box h2 {
+  color: white;
+}
+
+.body-image {
+  display: flex;
+  justify-content: end;
+}
+
+}
 /* mobile design  */
 @media screen and (max-width: 30rem) {
   body {
